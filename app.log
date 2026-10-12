@@ -1,0 +1,10 @@
+2026-10-11 09:00:00 INFO Application started
+2026-10-11 09:01:00 INFO Database connected
+2026-10-11 09:02:00 ERROR Database connection failed
+2026-10-11 09:03:00 INFO Retry started
+2026-10-11 09:04:00 ERROR Payment API timeout
+2026-10-11 09:05:00 INFO Application running
+2026-10-11 09:06:00 ERROR Application stopped
+2026-10-11 09:07:00 INFO Application started
+2026-10-11 09:08:00 WARNING Application is running low on memory
+2026-10-11 09:09:00 ERROR Application stopped
