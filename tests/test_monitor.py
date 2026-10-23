@@ -27,7 +27,18 @@ class TestSystemMonitor(unittest.TestCase):
         result = get_system_status()
 
         self.assertIn(result["status"], ["NORMAL", "ALERT"])
+    
+    def test_cpu_is_in_valid_range(self):
+        result = get_system_status()
 
+        self.assertGreaterEqual(result["cpu"], 0)
+        self.assertLessEqual(result["cpu"], 100)
+
+    def test_memory_is_in_valid_range(self):
+        result = get_system_status()
+
+        self.assertGreaterEqual(result["memory"], 0)
+        self.assertLessEqual(result["memory"], 100)
 
 if __name__ == "__main__":
     unittest.main()
